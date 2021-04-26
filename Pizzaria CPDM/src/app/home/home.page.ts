@@ -30,7 +30,7 @@ export class HomePage {
   async presentAlertRadioBorda() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Radio',
+      header: 'Bordas',
       inputs: [
         {
           name: 'Recheada - Catupiry',
@@ -61,9 +61,9 @@ export class HomePage {
           }
         },
         {
-          name: 'Recheada - Mussarela',
+          name: 'Recheada - Muçarela',
           type: 'radio',
-          label: 'Recheada - Mussarela',
+          label: 'Recheada - Muçarela',
           value: 'value4',
           handler: () => {
             console.log('Radio 4 selected');
@@ -92,7 +92,7 @@ export class HomePage {
   async presentAlertRadioMolho() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Radio',
+      header: 'Molho',
       inputs: [
         {
           name: 'Com Molho',
@@ -137,7 +137,7 @@ export class HomePage {
   async presentAlertCheckboxRecheio() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Checkbox',
+      header: 'Recheios',
       inputs: [
         {
           name: 'Muçarela',
@@ -231,7 +231,7 @@ export class HomePage {
   async presentAlertRadioTamanho() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Radio',
+      header: 'Tamanhos',
       inputs: [
         {
           name: '20cm',
@@ -244,7 +244,7 @@ export class HomePage {
           checked: true
         },
         {
-          name: '25cm',
+          name: '30cm',
           type: 'radio',
           label: '25cm',
           value: 'value2',
@@ -284,7 +284,7 @@ export class HomePage {
   async presentAlertCheckboxComplemento() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Checkbox',
+      header: 'Complemento',
       inputs: [
         {
           name: 'Muçarela',
