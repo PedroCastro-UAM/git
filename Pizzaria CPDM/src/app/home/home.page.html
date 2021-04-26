@@ -1,33 +1,31 @@
 <ion-header>
-  <ion-toolbar color= "danger">
-    <ion-title>
+  <ion-toolbar  color= "danger">
+    <ion-title class = "title">
       Monte sua pizza 🍕
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-card>
+
+<ion-img class = "image" src ="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=pexels-beqa-tefnadze-803290.jpg&fm=jpg"></ion-img>
+
+
+<ion-list>
   <ion-row>
-    <ion-card-header>
-      <ion-card-subtitle></ion-card-subtitle>
-      <ion-card-title>Recheio</ion-card-title>
-    </ion-card-header>
-      <ion-item>
+      <ion-item class = "itens">
+        Recheio
         <ion-buttons end>
           <button ion-button icon-only (click) ="presentAlertCheckboxRecheio()"  >
-           <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
+           <ion-icon slot="icon-only"name="add-outline"></ion-icon>
          </button>
         </ion-buttons>
   </ion-item>
 </ion-row>
-</ion-card>  
-<ion-card>
+ 
+
   <ion-row>
-  <ion-card-header>
-    <ion-card-subtitle></ion-card-subtitle>
-    <ion-card-title>Borda</ion-card-title>
-  </ion-card-header>
-  <ion-item>
+  <ion-item class = "itens">
+    Borda
     <ion-buttons end>
       <button ion-button icon-only (click) ="presentAlertRadioBorda()"  >
        <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
@@ -35,14 +33,11 @@
     </ion-buttons>
 </ion-item>
 </ion-row>
-</ion-card>  
-<ion-card>
+
+
   <ion-row>
-  <ion-card-header>
-    <ion-card-subtitle></ion-card-subtitle>
-    <ion-card-title>Molho</ion-card-title>
-  </ion-card-header>
-  <ion-item>
+  <ion-item class = "itens">
+    Molho
     <ion-buttons end>
       <button ion-button icon-only (click) ="presentAlertRadioMolho()"  >
        <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
@@ -50,14 +45,11 @@
     </ion-buttons>
 </ion-item>
 </ion-row>
-</ion-card>  
-<ion-card>
+ 
+
   <ion-row>
-  <ion-card-header>
-    <ion-card-subtitle></ion-card-subtitle>
-    <ion-card-title>Complemento</ion-card-title>
-  </ion-card-header>
-  <ion-item>
+  <ion-item class = "itens">
+    Complemento
     <ion-buttons end>
       <button ion-button icon-only (click) ="presentAlertCheckboxComplemento()"  >
        <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
@@ -65,22 +57,20 @@
     </ion-buttons>
 </ion-item>
 </ion-row>
-</ion-card>  
-<ion-card>
+
   <ion-row>
-  <ion-card-header>
-    <ion-card-subtitle></ion-card-subtitle>
-    <ion-card-title>Tamanho</ion-card-title>
-  </ion-card-header>
-  <ion-item>
-    <ion-buttons end>
+  <ion-item class = "itens">
+    Tamanho
+    <ion-buttons end class= "botao">
       <button ion-button icon-only (click) ="presentAlertRadioTamanho()"  >
        <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
      </button>
     </ion-buttons>
 </ion-item>
 </ion-row>
-</ion-card> 
+</ion-list>
 
+
+<ion-button> Finalize seu pedido </ion-button>
 
 
