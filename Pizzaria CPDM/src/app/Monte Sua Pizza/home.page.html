@@ -9,68 +9,69 @@
 
 <ion-img class = "image" src ="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=pexels-beqa-tefnadze-803290.jpg&fm=jpg"></ion-img>
 
-
-<ion-list>
-  <ion-row>
-      <ion-item class = "itens">
-        Recheio
-        <ion-buttons end>
-          <button ion-button icon-only (click) ="presentAlertCheckboxRecheio()"  >
-           <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
-         </button>
-        </ion-buttons>
-  </ion-item>
-</ion-row>
+<ion-card>
+<p>Recheios:</p>
+<ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+  <ion-select-option value="Calabresa">Calabresa</ion-select-option>
+  <ion-select-option value="Mussarela">Mussarela</ion-select-option>
+  <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
+  <ion-select-option value="Fritas">Batata Frita</ion-select-option>
+  <ion-select-option value="Pepperone">Pepperone</ion-select-option>
+  <ion-select-option value="Atum">Atum</ion-select-option>
+  <ion-select-option value="4Queijos">4 Quejos</ion-select-option>
+  <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
+  <ion-select-option value="Margherita">Margherita</ion-select-option>
+</ion-select>
+</ion-card>
  
 
-  <ion-row>
-  <ion-item class = "itens">
-    Borda
-    <ion-buttons end>
-      <button ion-button icon-only (click) ="presentAlertRadioBorda()"  >
-       <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
-     </button>
-    </ion-buttons>
-</ion-item>
-</ion-row>
-
-
-  <ion-row>
-  <ion-item class = "itens">
-    Molho
-    <ion-buttons end>
-      <button ion-button icon-only (click) ="presentAlertRadioMolho()"  >
-       <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
-     </button>
-    </ion-buttons>
-</ion-item>
-</ion-row>
+<ion-card>
+  <p>Borda:</p>
+  <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+    <ion-select-option value="Calabresa">Calabresa</ion-select-option>
+    <ion-select-option value="Mussarela">Mussarela</ion-select-option>
+    <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
+    <ion-select-option value="Fritas">Batata Frita</ion-select-option>
+    <ion-select-option value="Pepperone">Pepperone</ion-select-option>
+    <ion-select-option value="Atum">Atum</ion-select-option>
+    <ion-select-option value="4Queijos">4 Quejos</ion-select-option>
+    <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
+    <ion-select-option value="Margherita">Margherita</ion-select-option>
+  </ion-select>
+  </ion-card>
  
+    <ion-card>
+      <p>Complemento:</p>
+      <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+        <ion-select-option value="Calabresa">Calabresa</ion-select-option>
+        <ion-select-option value="Mussarela">Mussarela</ion-select-option>
+        <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
+        <ion-select-option value="Fritas">Batata Frita</ion-select-option>
+        <ion-select-option value="Pepperone">Pepperone</ion-select-option>
+        <ion-select-option value="Atum">Atum</ion-select-option>
+        <ion-select-option value="4Queijos">4 Quejos</ion-select-option>
+        <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
+        <ion-select-option value="Margherita">Margherita</ion-select-option>
+      </ion-select>
+      </ion-card>
 
-  <ion-row>
-  <ion-item class = "itens">
-    Complemento
-    <ion-buttons end>
-      <button ion-button icon-only (click) ="presentAlertCheckboxComplemento()"  >
-       <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
-     </button>
-    </ion-buttons>
-</ion-item>
-</ion-row>
-
-  <ion-row>
-  <ion-item class = "itens">
-    Tamanho
-    <ion-buttons end class= "botao">
-      <button ion-button icon-only (click) ="presentAlertRadioTamanho()"  >
-       <ion-icon slot="icon-only"name="add-circle-outline"></ion-icon>
-     </button>
-    </ion-buttons>
-</ion-item>
-</ion-row>
-</ion-list>
+      <ion-card>
+        <p>Tamanho:</p>
+        <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+          <ion-select-option value="Calabresa">Calabresa</ion-select-option>
+          <ion-select-option value="Mussarela">Mussarela</ion-select-option>
+          <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
+          <ion-select-option value="Fritas">Batata Frita</ion-select-option>
+          <ion-select-option value="Pepperone">Pepperone</ion-select-option>
+          <ion-select-option value="Atum">Atum</ion-select-option>
+          <ion-select-option value="4Queijos">4 Quejos</ion-select-option>
+          <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
+          <ion-select-option value="Margherita">Margherita</ion-select-option>
+        </ion-select>
+        </ion-card>
 
 
-<ion-button> Finalize seu pedido</ion-button>
+
+<ion-button color = "danger"> Finalize seu pedido</ion-button>
 
 
