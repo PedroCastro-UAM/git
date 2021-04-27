@@ -1,18 +1,21 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Escolha</ion-title>
+  <ion-toolbar color="danger">
+    <ion-title>Escolha sua Pizza</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   
-  <p>Pizza Inteira ou Metade</p>
+  <ion-card>
+  <ion-label>Pizza Inteira ou Metade</ion-label>
   <ion-select placeholder= "Inteira ou Metade">
     <ion-select-option value="Inteira">Inteira</ion-select-option>
     <ion-select-option value="Metade">Metade</ion-select-option>
   </ion-select>
-  <p></p>
-  <p>Sabores:</p>
+</ion-card>
+
+<ion-card>
+  <ion-label>Sabores:</ion-label>
   <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
     <ion-select-option value="Calabresa">Calabresa</ion-select-option>
     <ion-select-option value="Mussarela">Mussarela</ion-select-option>
@@ -24,18 +27,21 @@
     <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
     <ion-select-option value="Margherita">Margherita</ion-select-option>
   </ion-select>
+</ion-card>
 
-  <p></p>
-  <ion-label> Borda </ion-label>
+<ion-card>
+  <ion-label>Borda</ion-label>
   <ion-select placeholder="Selecione a Borda">
     <ion-select-option value="Cheddar">Cheddar</ion-select-option>
     <ion-select-option value="Catupiry">Catupiry</ion-select-option>
     <ion-select-option value="Borda Normal">Normal</ion-select-option>
   </ion-select>
-  <p></p>
+</ion-card>
+
+<ion-card>
   <ion-item>
     <ion-label>Adicionais</ion-label>
-    <ion-select multiple="true" cancelText="Cancelar" okText="Confirmar">
+    <ion-select multiple="true" cancelText="Cancelar" okText="Confirmar" expand="full">
       <ion-select-option value="bacon">Bacon</ion-select-option>
       <ion-select-option value="molho">Molho Extra</ion-select-option>
       <ion-select-option value="queijoxta">Dobro de Queijo</ion-select-option>
@@ -48,4 +54,13 @@
       <ion-select-option value="Presunto">Presunto</ion-select-option>
     </ion-select>
   </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <ion-textarea placeholder="Observações Adicionais"></ion-textarea>
+  </ion-item>
+</ion-card>
 </ion-content>
+
+<ion-button color="danger" expand="full">Finalizar Pedido</ion-button>
