@@ -9,10 +9,13 @@
 <ion-content class= "ion-padding">
   <h2>Seja Bem Vindo</h2>
   <ion-img class="ima" src ="https://images.pexels.com/photos/1260968/pexels-photo-1260968.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1260968.jpg&fm=jpg"></ion-img>
-  <h3>Clique no botão para continuar</h3>
+  <h3 class = "textbutton">Escolha uma opção para continuar</h3>
   <ion-text>
-    <ion-button fill="solid" color="warning" expand="block">
-      Realizar Pedido
+    <ion-button fill="solid" color="warning" expand="block" [routerLink]="['/escolha']">
+      Escolha uma pizza pronta
+    </ion-button>
+    <ion-button fill="solid" color="warning" expand="block" [routerLink]="['/home']">
+      Monte sua pizza
     </ion-button>
   </ion-text>
   
