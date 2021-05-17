@@ -42,27 +42,9 @@
 
 <ion-card>
   <ion-item>
-    <ion-label>Adicionais</ion-label>
-    <ion-select multiple="true" cancelText="Cancelar" okText="Confirmar" expand="full">
-      <ion-select-option value="bacon">Bacon</ion-select-option>
-      <ion-select-option value="molho">Molho Extra</ion-select-option>
-      <ion-select-option value="queijoxta">Dobro de Queijo</ion-select-option>
-      <ion-select-option value="catupiry">Catupiry</ion-select-option>
-      <ion-select-option value="cheddar">Cheddar</ion-select-option>
-      <ion-select-option value="cebola">Cebola</ion-select-option>
-      <ion-select-option value="pepperone">Pepperone</ion-select-option>
-      <ion-select-option value="calabresa">Calabresa</ion-select-option>
-      <ion-select-option value="Azeitona">Azeitona</ion-select-option>
-      <ion-select-option value="Presunto">Presunto</ion-select-option>
-    </ion-select>
-  </ion-item>
-</ion-card>
-
-<ion-card>
-  <ion-item>
     <ion-textarea placeholder="Observações Adicionais"></ion-textarea>
   </ion-item>
 </ion-card>
 </ion-content>
 
-<ion-button color="danger" expand="full" [routerLink]="['/home']">Finalizar Pedido</ion-button>
+<ion-button color="danger" [routerLink]="['/finalizacao']"> Finalizar Pedido </ion-button>
