@@ -11,17 +11,24 @@
       <ion-label class="head"> Confirmação de Pedido:</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>{{pizza.tamanho}}</ion-label>
+      <ion-label>Tamanho: {{pizza.tamanho}}</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>{{pizza.sabor}}</ion-label>
+      <ion-label>Sabor: {{pizza.sabor}}</ion-label>
     </ion-item>
     <ion-item>
-      <ion-label>{{pizza.borda}}</ion-label>
+      <ion-label>Borda: {{pizza.borda}}</ion-label>
     </ion-item>
-    <ion-item>
-      <ion-label>{{pizza.observacao}}</ion-label>
+    <ng-template [ngIf]="pizza.complemento != null">
+      <ion-item>
+      <ion-label>Complemento: {{pizza.complemento}}</ion-label>
     </ion-item>
+      </ng-template>
+      <ng-template [ngIf]="pizza.observacao != null">
+        <ion-item>
+          <ion-label>Observações: {{pizza.observacao}}</ion-label>
+        </ion-item>
+      </ng-template>
   </ion-list>
 
 </ion-content>

@@ -10,7 +10,7 @@
 
 <ion-card>
 <p>Recheios:</p>
-<ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+<ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.sabor">
   <ion-select-option value="Calabresa">Calabresa</ion-select-option>
   <ion-select-option value="Mussarela">Mussarela</ion-select-option>
   <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
@@ -27,7 +27,7 @@
 
 <ion-card>
   <ion-label>Borda</ion-label>
-  <ion-select placeholder="Selecione a Borda">
+  <ion-select placeholder="Selecione a Borda" [(ngModel)]="pizza.borda">
     <ion-select-option value="Cheddar">Cheddar</ion-select-option>
     <ion-select-option value="Catupiry">Catupiry</ion-select-option>
     <ion-select-option value="Borda Normal">Normal</ion-select-option>
@@ -37,7 +37,7 @@
  
     <ion-card>
       <p>Complemento:</p>
-      <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+      <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.complemento">
         <ion-select-option value="Calabresa">Calabresa</ion-select-option>
         <ion-select-option value="Mussarela">Mussarela</ion-select-option>
         <ion-select-option value="Frango">Frango com Catupiry</ion-select-option>
@@ -55,7 +55,7 @@
 
       <ion-card>
         <p>Tamanho:</p>
-        <ion-select placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+        <ion-select placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.tamanho">
           <ion-select-option value="20cm">20cm</ion-select-option>
           <ion-select-option value="30cm">30cm</ion-select-option>
           <ion-select-option value="40cm">40cm</ion-select-option>
@@ -64,6 +64,6 @@
 
 
 
-<ion-button color = "danger"[routerLink]="['/finalizacao']"> Finalize seu pedido </ion-button>
+<ion-button color = "danger" (click)= "continuarPizza()"> Finalize seu pedido </ion-button>
 
 
