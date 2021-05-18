@@ -8,7 +8,7 @@
   
   <ion-card>
   <ion-label>Pizza Inteira ou Metade</ion-label>
-  <ion-select placeholder= "Inteira ou Metade">
+  <ion-select placeholder= "Inteira ou Metade" [(ngModel)]="pizza.tamanho">
     <ion-select-option value="Inteira">Inteira</ion-select-option>
     <ion-select-option value="Metade">Metade</ion-select-option>
   </ion-select>
@@ -16,7 +16,7 @@
 
 <ion-card>
   <ion-label>Sabores:</ion-label>
-  <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar">
+  <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.sabor">
     <ion-select-option value="Calabresa">Calabresa</ion-select-option>
     <ion-select-option value="Muçarela">Mussarela</ion-select-option>
     <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
@@ -32,7 +32,7 @@
 
 <ion-card>
   <ion-label>Borda</ion-label>
-  <ion-select placeholder="Selecione a Borda">
+  <ion-select placeholder="Selecione a Borda" [(ngModel)]="pizza.borda">
     <ion-select-option value="Cheddar">Cheddar</ion-select-option>
     <ion-select-option value="Catupiry">Catupiry</ion-select-option>
     <ion-select-option value="Borda Normal">Normal</ion-select-option>
@@ -42,9 +42,9 @@
 
 <ion-card>
   <ion-item>
-    <ion-textarea placeholder="Observações Adicionais"></ion-textarea>
+    <ion-textarea placeholder="Observações Adicionais" [(ngModel)]="pizza.observacao"></ion-textarea>
   </ion-item>
 </ion-card>
 </ion-content>
 
-<ion-button color="danger" [routerLink]="['/finalizacao']"> Finalizar Pedido </ion-button>
+<ion-button color="danger" (click)="submitPizza()" > Finalizar Pedido </ion-button>

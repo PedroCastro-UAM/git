@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Storage} from '@ionic/storage-angular';
+import { Router } from '@angular/router';
+import { StorageService } from '../services/storage-service.service';
 
-export interface Pizza{
+
+export interface Pizza {
   tipo: string;
   sabor: string;
   borda: string;
@@ -13,21 +15,20 @@ export interface Pizza{
   styleUrls: ['./escolha.page.scss'],
 })
 
-export class EscolhaPage implements OnInit {
+export class EscolhaPage {
 
-  private saveToStorage(){
-    this.storage.set
+  public pizza = {
+    tamanho: "", 
+    sabor: "",
+    borda: "",
+    observacao: "",
   }
 
-  private async loadFromStorage(){
+  constructor(public storageService: StorageService , private router: Router) { }
 
-  }
-
-  constructor(private storage: Storage) {
-    this.loadFromStorage();
-   }
-
-  ngOnInit() {
+  public async submitPizza(){
+    await this.storageService.set('currentPizza', this.pizza);
+    this.router.navigate(['/finalizacao']);
   }
 
 }
