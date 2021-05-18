@@ -13,3 +13,10 @@ h1, h2, h3{
   .textbutton{
     font-size: 20px;
   }
+
+  ion-content {
+    --background: url(/assets/tela_inicial.jpg) center;
+    &::part(background) {
+       background-size: cover;
+     }
+    }
