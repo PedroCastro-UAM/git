@@ -1,5 +1,7 @@
 {
   "name": "Tarefa",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

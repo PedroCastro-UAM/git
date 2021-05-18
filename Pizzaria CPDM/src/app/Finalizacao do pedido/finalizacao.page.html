@@ -5,43 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid>
-  <ion-item>
-    <ion-label position="stacked">Nome</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-</ion-grid>
-  <ion-grid>
-<ion-row class="ion-align-items-center">
-  <ion-col>
-    <ion-item>
-    <ion-label position="stacked">Endereço</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-</ion-col>
-<ion-col>
-  <ion-item>
-    <ion-label position="stacked">Complemento</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-</ion-col>
-</ion-row>
-<ion-row class="ion-align-items-center">
-  <ion-col>
-<ion-item>
-    <ion-label position="stacked">CEP</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-</ion-col>
-<ion-col>
-  <ion-item>
-    <ion-label position="stacked">Ponto de referencia</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-</ion-col>
-</ion-row>
-</ion-grid>
-
+  <app-contactform></app-contactform>
 </ion-content>
 
 <ion-button color="danger" [routerLink]="['/agradecimento']" expand="full">Completar pedido</ion-button>

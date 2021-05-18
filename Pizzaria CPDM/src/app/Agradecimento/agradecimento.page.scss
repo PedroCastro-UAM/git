@@ -1,6 +1,10 @@
 ion-content{
-    --background: url(https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    --background: url(https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center;
     &::part(background){
         background-size: cover;
     }
+}
+
+.button{
+    margin: 545px 60px;
 }

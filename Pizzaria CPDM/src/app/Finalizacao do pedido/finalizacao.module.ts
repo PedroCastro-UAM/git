@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { FinalizacaoPageRoutingModule } from './finalizacao-routing.module';
 
 import { FinalizacaoPage } from './finalizacao.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     FinalizacaoPageRoutingModule
   ],
   declarations: [FinalizacaoPage]
