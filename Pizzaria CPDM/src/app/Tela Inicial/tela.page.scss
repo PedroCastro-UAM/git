@@ -1,8 +1,11 @@
 h1, h2, h3{
     text-align: center;
   }
+  h2 , h3{
+    color:white;
+  }
   h1{ 
-    color: rgb(0, 0, 0);
+    color: white;
     font-style: bold;
   }
   
@@ -14,9 +17,14 @@ h1, h2, h3{
   .textbutton{
     font-size: 20px;
   }
-
+.button2{
+  margin-top: 10px;
+}
+.button1{
+  margin-top: 380px;
+}
   ion-content {
-    --background: url(/assets/tela_inicial.jpg) center;
+    --background: url(https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center;
     &::part(background) {
        background-size: cover;
      }
