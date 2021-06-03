@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'agradecimento',
     loadChildren: () => import('./Agradecimento/agradecimento.module').then( m => m.AgradecimentoPageModule)
+  },  {
+    path: 'editar-pedido',
+    loadChildren: () => import('./editar-pedido/editar-pedido.module').then( m => m.EditarPedidoPageModule)
   },
+
 ];
 
 @NgModule({
