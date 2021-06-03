@@ -7,12 +7,13 @@
     font-size: 25px;
 }
 
-.image{
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .title{
     font-size: 30px;
+}
+
+ion-content{
+    --background: url(https://cdn.awsli.com.br/600x450/118/118395/produto/4042415/fbb06ff016.jpg) center;
+    &::part(background){
+        background-size: cover;
+    }
 }

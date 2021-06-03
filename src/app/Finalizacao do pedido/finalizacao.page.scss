@@ -10,3 +10,10 @@ p {
 ion-list{
     margin-top: 40px;
 }
+
+ion-content{
+  --background: url(https://images.pexels.com/photos/4109078/pexels-photo-4109078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center;
+  &::part(background){
+      background-size: cover;
+  }
+}

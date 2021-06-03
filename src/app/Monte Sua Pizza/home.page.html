@@ -6,9 +6,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-img class = "image" src ="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=pexels-beqa-tefnadze-803290.jpg&fm=jpg"></ion-img>
 
-<ion-card>
+
+<ion-content>
+  <ion-card>
 <p>Recheios:</p>
 <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.sabor">
   <ion-select-option value="Calabresa">Calabresa</ion-select-option>
@@ -35,7 +36,7 @@
   </ion-select>
 </ion-card>
  
-    <ion-card>
+  <ion-card>
       <p>Complemento:</p>
       <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.complemento">
         <ion-select-option value="Calabresa">Calabresa</ion-select-option>
@@ -60,7 +61,8 @@
           <ion-select-option value="30cm">30cm</ion-select-option>
           <ion-select-option value="40cm">40cm</ion-select-option>
         </ion-select>
-        </ion-card>
+      </ion-card>
+      </ion-content>    
 
 
 

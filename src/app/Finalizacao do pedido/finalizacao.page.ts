@@ -15,6 +15,7 @@ export class FinalizacaoPage {
     sabor: "",
     borda: "",
     observacao: "",
+    complemento: "",
   }
 
   async ionViewWillEnter() {
