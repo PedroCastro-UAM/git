@@ -18,9 +18,23 @@ export class FinalizacaoPage {
     complemento: "",
   }
 
+  public pessoa = {
+    nome: "", 
+    cep: "",
+    endereço: "",
+    endcomp: "",
+    bairro:"",
+    cidade:"",
+    ponto:"",
+  }
+
   async ionViewWillEnter() {
     this.pizza = await this.storageService.get("currentPizza");
     console.warn(this.pizza);
+  }
+
+  public async submitPessoa(){
+    await this.storageService.set('currentPessoa', this.pessoa);
   }
 
 }
