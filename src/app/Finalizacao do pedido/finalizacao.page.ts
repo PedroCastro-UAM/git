@@ -40,6 +40,6 @@ export class FinalizacaoPage {
 
   public async editarpizza(){
     await this.storageService.set('currentPizza', this.pizza);
-    this.router.navigate(['/editar']);
+    this.router.navigate(['/editar-pedido']);
   }
 }
