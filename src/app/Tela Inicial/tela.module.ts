@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
+import { TelaPage } from './tela.page';
 
 import { TelaPageRoutingModule } from './tela-routing.module';
 
-import { TelaPage } from './tela.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TelaPageRoutingModule
+    TelaPageRoutingModule,
   ],
   declarations: [TelaPage]
 })

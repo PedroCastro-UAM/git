@@ -9,7 +9,7 @@ describe('TelaPage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TelaPage ],
+      declarations: [TelaPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
