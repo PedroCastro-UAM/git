@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PRIMARY_OUTLET, Router } from '@angular/router';
 import { StorageService } from '../services/storage-service.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { StorageService } from '../services/storage-service.service';
 })
 export class FinalizacaoPage {
 
-  constructor(public storageService: StorageService) { }
+  constructor(public storageService: StorageService , private router: Router) {}
 
   public pizza = {
     tamanho: "", 
@@ -37,4 +38,8 @@ export class FinalizacaoPage {
     await this.storageService.set('currentPessoa', this.pessoa);
   }
 
+  public async editarpizza(){
+    await this.storageService.set('currentPizza', this.pizza);
+    this.router.navigate(['/editar']);
+  }
 }

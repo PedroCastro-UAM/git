@@ -1,10 +1,21 @@
 ion-content{
-    --background: url(https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center;
+    --background: url(https://6370.cdn.simplo7.net/static/6370/sku/tricoline-tecido-tricoline-liso-preto-100-algodao-c013--p-1536421216654.jpg) center;
     &::part(background){
         background-size: cover;
     }
 }
 
 .button1{
-    margin-top: 636px;
+    margin-top: 220px;
   }
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 150px;
+}
+
+h2{
+    font-size: 18px;
+    text-align: center;
+}
