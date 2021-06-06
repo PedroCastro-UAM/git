@@ -18,6 +18,7 @@ export interface Pizza {
 export class EscolhaPage {
 
   public pizza = {
+    tipo: "escolha",
     tamanho: "", 
     sabor: "",
     borda: "",

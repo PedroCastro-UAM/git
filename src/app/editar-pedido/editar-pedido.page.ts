@@ -10,6 +10,7 @@ import { StorageService } from '../services/storage-service.service';
 export class EditarPedidoPage implements OnInit {
 
   public pizza = {
+    tipo: "",
     tamanho: "", 
     sabor: "",
     borda: "",
@@ -17,6 +18,11 @@ export class EditarPedidoPage implements OnInit {
   }
 
   constructor(public storageService: StorageService , private router: Router) {}
+
+  async ionViewWillEnter() {
+    this.pizza = await this.storageService.get("currentPizza");
+    console.warn(this.pizza);
+  }
 
   public async editarpizza(){
     await this.storageService.set('currentPizza', this.pizza);

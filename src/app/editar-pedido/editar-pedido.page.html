@@ -1,40 +1,43 @@
 <ion-header>
-  <ion-toolbar color = "danger">
+  <ion-toolbar color="danger">
     <ion-title>Edite seu Pedido</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-<p>Recheios:</p>
-<ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.sabor">
-  <ion-select-option value="Calabresa">Calabresa</ion-select-option>
-  <ion-select-option value="Mussarela">Mussarela</ion-select-option>
-  <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
-  <ion-select-option value="Fritas">Batata Frita</ion-select-option>
-  <ion-select-option value="Pepperone">Pepperone</ion-select-option>
-  <ion-select-option value="Atum">Atum</ion-select-option>
-  <ion-select-option value="4Queijos">4 Quejos</ion-select-option>
-  <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
-  <ion-select-option value="Margherita">Margherita</ion-select-option>
-  <ion-select-option value="Portuguesa">Portuguesa</ion-select-option>
-</ion-select>
-</ion-card>
- 
+  <ng-template [ngIf]="pizza.tipo === 'monte'">
+    <ion-card>
+      <p>Recheios:</p>
+      <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar"
+        [(ngModel)]="pizza.sabor">
+        <ion-select-option value="Calabresa">Calabresa</ion-select-option>
+        <ion-select-option value="Mussarela">Mussarela</ion-select-option>
+        <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
+        <ion-select-option value="Fritas">Batata Frita</ion-select-option>
+        <ion-select-option value="Pepperone">Pepperone</ion-select-option>
+        <ion-select-option value="Atum">Atum</ion-select-option>
+        <ion-select-option value="4Queijos">4 Quejos</ion-select-option>
+        <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
+        <ion-select-option value="Margherita">Margherita</ion-select-option>
+        <ion-select-option value="Portuguesa">Portuguesa</ion-select-option>
+      </ion-select>
+    </ion-card>
 
-<ion-card>
-  <ion-label>Borda</ion-label>
-  <ion-select placeholder="Selecione a Borda" [(ngModel)]="pizza.borda">
-    <ion-select-option value="Cheddar">Cheddar</ion-select-option>
-    <ion-select-option value="Catupiry">Catupiry</ion-select-option>
-    <ion-select-option value="Borda Normal">Normal</ion-select-option>
-    <ion-select-option value="Sem Borda">Sem Borda</ion-select-option>
-  </ion-select>
-</ion-card>
- 
-  <ion-card>
+
+    <ion-card>
+      <ion-label>Borda</ion-label>
+      <ion-select placeholder="Selecione a Borda" [(ngModel)]="pizza.borda">
+        <ion-select-option value="Cheddar">Cheddar</ion-select-option>
+        <ion-select-option value="Catupiry">Catupiry</ion-select-option>
+        <ion-select-option value="Borda Normal">Normal</ion-select-option>
+        <ion-select-option value="Sem Borda">Sem Borda</ion-select-option>
+      </ion-select>
+    </ion-card>
+
+    <ion-card>
       <p>Complemento:</p>
-      <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.complemento">
+      <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar"
+        [(ngModel)]="pizza.complemento">
         <ion-select-option value="Calabresa">Calabresa</ion-select-option>
         <ion-select-option value="Mussarela">Mussarela</ion-select-option>
         <ion-select-option value="Frango">Frango com Catupiry</ion-select-option>
@@ -48,19 +51,61 @@
         <ion-select-option value="Cebola">Margherita</ion-select-option>
         <ion-select-option value="Orégano">Margherita</ion-select-option>
       </ion-select>
-      </ion-card>
+    </ion-card>
 
-      <ion-card>
-        <p>Tamanho:</p>
-        <ion-select placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.tamanho">
-          <ion-select-option value="20cm">20cm</ion-select-option>
-          <ion-select-option value="30cm">30cm</ion-select-option>
-          <ion-select-option value="40cm">40cm</ion-select-option>
-        </ion-select>
-      </ion-card>
-      </ion-content>    
+    <ion-card>
+      <p>Tamanho:</p>
+      <ion-select placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.tamanho">
+        <ion-select-option value="20cm">20cm</ion-select-option>
+        <ion-select-option value="30cm">30cm</ion-select-option>
+        <ion-select-option value="40cm">40cm</ion-select-option>
+      </ion-select>
+    </ion-card>
+  </ng-template>
+  <ng-template [ngIf]="pizza.tipo === 'escolha'">
+    <ion-card>
+      <ion-label>Pizza Inteira ou Metade</ion-label>
+      <ion-select placeholder="Inteira ou Metade" [(ngModel)]="pizza.tamanho">
+        <ion-select-option value="Inteira">Inteira</ion-select-option>
+        <ion-select-option value="Metade">Metade</ion-select-option>
+      </ion-select>
+    </ion-card>
+
+    <ion-card>
+      <ion-label>Sabores:</ion-label>
+      <ion-select multiple="true" placeholder="Escolha o sabor da sua pizza" okText="Confirmar" [(ngModel)]="pizza.sabor">
+        <ion-select-option value="Calabresa">Calabresa</ion-select-option>
+        <ion-select-option value="Muçarela">Mussarela</ion-select-option>
+        <ion-select-option value="FrangoCatupiry">Frango com Catupiry</ion-select-option>
+        <ion-select-option value="Fritas">Batata Frita</ion-select-option>
+        <ion-select-option value="Pepperone">Pepperone</ion-select-option>
+        <ion-select-option value="Atum">Atum</ion-select-option>
+        <ion-select-option value="4Queijos">4 Quejos</ion-select-option>
+        <ion-select-option value="2Queijos">2 Queijos</ion-select-option>
+        <ion-select-option value="Margherita">Margherita</ion-select-option>
+        <ion-select-option value="Portuguesa">Portuguesa</ion-select-option>
+      </ion-select>
+    </ion-card>
+
+    <ion-card>
+      <ion-label>Borda</ion-label>
+      <ion-select placeholder="Selecione a Borda" [(ngModel)]="pizza.borda">
+        <ion-select-option value="Cheddar">Cheddar</ion-select-option>
+        <ion-select-option value="Catupiry">Catupiry</ion-select-option>
+        <ion-select-option value="Borda Normal">Normal</ion-select-option>
+        <ion-select-option value="Sem Borda">Sem Borda</ion-select-option>
+      </ion-select>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-textarea placeholder="Observações Adicionais" [(ngModel)]="pizza.observacao"></ion-textarea>
+      </ion-item>
+    </ion-card>
+  </ng-template>
+</ion-content>
 
 
-<ion-button color = "danger" (click)= "editarpizza()" expand = "full">
+<ion-button color="danger" (click)="editarpizza()" expand="full">
   Finalize sua edição aqui
 </ion-button>

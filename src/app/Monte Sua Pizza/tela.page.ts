@@ -11,6 +11,7 @@ import { StorageService } from '../services/storage-service.service';
 export class TelaPage {
 
   public pizza = {
+    tipo: "monte",
     tamanho: "", 
     sabor: "",
     borda: "",
@@ -20,7 +21,7 @@ export class TelaPage {
   constructor(public storageService: StorageService , private router: Router) {}
 
     public async continuarPizza(){
-      await this.storageService.set('currentPizza', this.pizza);
+      await this.storageService.set('currentPizza', this.pizza);     
       this.router.navigate(['/finalizacao']);
     }
 }
