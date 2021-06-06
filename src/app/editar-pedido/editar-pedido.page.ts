@@ -15,6 +15,7 @@ export class EditarPedidoPage implements OnInit {
     sabor: "",
     borda: "",
     complemento: "",
+    observacao: "",
   }
 
   constructor(public storageService: StorageService , private router: Router) {}
