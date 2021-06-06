@@ -1,50 +1,50 @@
 <ion-grid>
   <ion-item>
     <ion-label position="stacked">Nome</ion-label>
-    <ion-input [(ngModel)] = "pessoa.nome" (ionChange)="saveData($event);"></ion-input>
+    <ion-input [(ngModel)]="pessoa.nome" (ionChange)="saveData($event);"></ion-input>
   </ion-item>
 </ion-grid>
-  <ion-grid>
-<ion-row class="ion-align-items-center">
-  <ion-col>
-    <ion-item>
-    <ion-label position="stacked">CEP</ion-label>
-    <ion-input [(ngModel)] = "pessoa.cep" (ionChange)="saveData($event);"></ion-input>
-  </ion-item>
-</ion-col>
-<ion-col>
-  <ion-item>
-    <ion-label position="stacked">Endereço</ion-label>
-    <ion-input [(ngModel)] = "pessoa.endereco" (ionChange)="saveData($event);"></ion-input>
-  </ion-item>
-</ion-col>
-</ion-row>
-<ion-row class="ion-align-items-center">
-  <ion-col>
-<ion-item>
-    <ion-label position="stacked">Complemento</ion-label>
-    <ion-input [(ngModel)] = "pessoa.endcomp" (ionChange)="saveData($event);"></ion-input>
-  </ion-item>
-</ion-col>
-<ion-col>
-  <ion-item>
-    <ion-label position="stacked">Cidade</ion-label>
-    <ion-input [(ngModel)] = "pessoa.cidade" (ionChange)="saveData($event);"></ion-input>
-  </ion-item>
-</ion-col>
-</ion-row>
-<ion-row class="ion-align-items-center">
-  <ion-col>
-    <ion-item>
-    <ion-label position="stacked">Bairro</ion-label>
-    <ion-input [(ngModel)] = "pessoa.bairro" (ionChange)="saveData($event);"></ion-input>
-  </ion-item>
-</ion-col>
-<ion-col>
-  <ion-item>
-    <ion-label position="stacked">Ponto de Referencia</ion-label>
-    <ion-input [(ngModel)] = "pessoa.ponto" (ionChange)="saveData($event);"></ion-input>
-  </ion-item>
-</ion-col>
-</ion-row>
+<ion-grid>
+  <ion-row class="ion-align-items-center">
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked">CEP</ion-label>
+        <ion-input [(ngModel)]="pessoa.cep" (ionChange)="onCepChange($event);" minlength="8" maxlength="8" pattern="tel"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked">Endereço</ion-label>
+        <ion-input [(ngModel)]="pessoa.endereco" (ionChange)="saveData($event);"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center">
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked">Complemento</ion-label>
+        <ion-input [(ngModel)]="pessoa.endcomp" (ionChange)="saveData($event);"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked">Cidade</ion-label>
+        <ion-input [(ngModel)]="pessoa.cidade" (ionChange)="saveData($event);"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-align-items-center">
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked">Bairro</ion-label>
+        <ion-input [(ngModel)]="pessoa.bairro" (ionChange)="saveData($event);"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked">Ponto de Referencia</ion-label>
+        <ion-input [(ngModel)]="pessoa.ponto" (ionChange)="saveData($event);"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
 </ion-grid>
