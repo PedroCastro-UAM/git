@@ -1,0 +1,6 @@
+ion-content{
+    --background: url(https://st2.depositphotos.com/5988232/11143/v/950/depositphotos_111433034-stock-illustration-pizza-ingredients-italian-pizza-collection.jpg) center;
+    &::part(background){
+        background-size: cover;
+    }
+}

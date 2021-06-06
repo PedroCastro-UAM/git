@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./Monte Sua Pizza/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./Tela Inicial/home.module').then( m => m.HomePageModule)
   },
   {
     path: '',
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'tela',
-    loadChildren: () => import('./Tela Inicial/tela.module').then( m => m.TelaPageModule)
+    loadChildren: () => import('./Monte Sua Pizza/tela.module').then( m => m.TelaPageModule)
   },
   {
     path: 'escolha',
@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'agradecimento',
     loadChildren: () => import('./Agradecimento/agradecimento.module').then( m => m.AgradecimentoPageModule)
-  },  {
+  },
+  {
     path: 'editar-pedido',
     loadChildren: () => import('./editar-pedido/editar-pedido.module').then( m => m.EditarPedidoPageModule)
   },
